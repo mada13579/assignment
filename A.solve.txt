@@ -1,0 +1,70 @@
+// Online C++ compiler to run C++ program online
+
+
+#include <iostream>
+
+
+#include <cmath>
+
+
+using namespace std;
+
+
+int main() {
+   
+
+
+  if(l,w,z >= 1 && l,w,z >= 1000000000){
+
+
+                return 1;
+   
+
+     }
+
+   
+
+
+float l,w,z ;
+    
+    
+   
+ 
+  
+
+
+  cout<<"enter the length"<<endl;
+  
+
+
+  cin>>l;
+  
+
+
+  cout<<"enter the width"<<endl;
+  
+
+
+  cin>>w;
+   
+
+
+   cout<<"enter the square length"<<endl;
+
+  
+
+  cin>>z;
+  
+
+ 
+ 
+    cout<<"number of flower beds = "<<ceil((l/z)*2 + (w/z)*2)<<endl;
+    
+    
+    
+    
+  
+    
+
+    return 0;
+}
