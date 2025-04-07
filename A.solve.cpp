@@ -1,72 +1,70 @@
+// Online C++ compiler to run C++ program online
+
+
 #include <iostream>
 
 
-#include <string>
+#include <cmath>
+
 
 using namespace std;
 
 
-
 int main() {
+   
+float l,w,z ;
+   
 
- int n;
-
-
- cin >> n;
-if(n >= 1 && n <= 150){
+  if(l,w,z >= 1 && l,w,z >= 1000000000){
 
 
                 return 1;
-
-
-     }
-
-
-
-
-
-
-
-
-
-   int temperature = 0;
-
-
-
-    for (int i = 0; i < n; i++) {
-
-
-     string command;
-
-
-      cin >> command;
-
-
-
-
-
-
-     if (command == "T++" || command == "T++") {
-
-
-     temperature++;
-
-
-
-    } else if (command == "T--" || command == "T--") {
-
-
-     temperature--;  // Decrease temperature by 1
-
+   
 
      }
-    }
 
-    cout << temperature << endl;
-
+   
 
 
+ 
+    
+   
+ 
+  
 
 
- return 0;
+  cout<<"enter the length"<<endl;
+  
+
+
+  cin>>l;
+  
+
+
+  cout<<"enter the width"<<endl;
+  
+
+
+  cin>>w;
+   
+
+
+   cout<<"enter the square length"<<endl;
+
+  
+
+  cin>>z;
+  
+
+ 
+ 
+    cout<<"number of flower beds = "<<ceil((l/z)*2 + (w/z)*2)<<endl;
+    
+    
+    
+    
+  
+    
+
+    return 0;
 }
