@@ -1,73 +1,72 @@
 #include <iostream>
+
+
 #include <string>
 
 using namespace std;
 
+
+
 int main() {
+  int n;
+   
+
+ cin >> n;  
 
 
- string x;
-
-
- cin >> x;
-
-
-
-if(x >= 1 && x <= 10000000000000000000){
+if(n >= 1 && n <= 150){
 
 
                 return 1;
-
+   
 
      }
 
+   
+ 
+
+ 
+
+ 
+
+   int temperature = 0; 
 
 
 
- string x;
+    for (int i = 0; i < n; i++) {
+   
 
+     string command;
+  
 
- cin >> x;
+      cin >> command; 
 
+     
 
-  for (int i = 0; i < x.length(); ++i) {
+ 
+   
 
+     if (command == "T++" || command == "T++") {
+       
 
-     int d = x[i] - '0';
+     temperature++;  
 
-      int transformed = 9 - d;
+  
 
+    } else if (command == "T--" || command == "T--") {
+       
 
+     temperature--;  // Decrease temperature by 1
+   
 
-     if (i == 0) {
-
-
-
-          if (d > transformed) {
-
-
-            x[i] = '0' + transformed;
-
-
-  }
-        } else
-
- {
-
-
-
-           if (d > transformed) {
-
-
-          x[i] = '0' + transformed;
-
-
-         }
-        }
+     }
     }
 
-    cout << x << endl;
+    cout << temperature << endl; 
 
 
-   return 0;
+
+   
+
+ return 0;
 }
